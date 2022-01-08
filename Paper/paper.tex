@@ -1,0 +1,66 @@
+\documentclass[hidelinks]{article}
+\usepackage{Resources/style}
+\usepackage[utf8]{inputenc}
+\usepackage{acro}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[center]{caption}
+\usepackage[T1]{fontenc}
+
+\graphicspath{ {./Resources/Images/} }
+
+\DeclareAcronym{ris}{
+  short=RIS,
+  long=Reconfigurable Intelligent Surfaces,
+}
+
+
+
+\pubyear{Published Year}
+\subjectarea{Telecommunications}
+
+
+\begin{document}
+
+\title{Title}
+\author{Author/s}
+\course{Course Title}
+\school{Yildiz Technical University}
+\date{Date}
+\keywords{Keywords}
+
+\maketitle
+
+\begin{abstract}
+
+Test
+
+\end{abstract}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\section*{Acronyms}
+\printacronyms[heading=none]
+\label{sec:intro}
+\addcontentsline{toc}{section}{\nameref{sec:intro}}
+
+\section{Introduction}
+
+
+\section{Comparison with Existing Technologies}
+
+
+\section{Future Potential and Use Cases}
+
+
+
+\section{Conclusion}
+
+
+
+\clearpage
+\bibliographystyle{unsrt}
+\bibliography{Resources/bibliography}
+
+\end{document}
